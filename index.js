@@ -16,8 +16,14 @@ function displaynumbers() {
 
 function randomNumber() {
     let rand = Math.floor(Math.random() * 76)
- return(rand)
+ console.log(rand)
 
+}
+
+function highlightRandom (event) {
+    let clickRandom = event.target;
+    clickRandom.classList.add("selected")
+    clickRandom.classList.highlight('rand')
 }
 
 function executeOnLoad() {
