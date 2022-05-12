@@ -15,16 +15,17 @@ function displaynumbers() {
 
 
 function randomNumber() {
-    let rand = Math.floor(Math.random() * 76)
+    let rand = Math.floor(Math.random() * 76 ,1)
  console.log(rand)
 
+ let highlight = document.getElementsByClassName("number")
+ highlight[rand -1].style.backgroundColor = "blue"
+ 
 }
 
-function highlightRandom (event) {
-    let clickRandom = event.target;
-    clickRandom.classList.add("selected")
-    clickRandom.classList.highlight('rand')
-}
+//function highlight (event) {
+//  clickRandom.classList.highlight('rand')
+//}
 
 function executeOnLoad() {
     displaynumbers()
